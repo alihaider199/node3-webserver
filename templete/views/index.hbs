@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        form {
+  display: flex;
+  align-items: center;
+}
+
+input{
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button{
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Use this site to get your weather!</p>
+        <form>
+            <input placeholder="location" required>
+            <button>Search</button>
+        </form>
+        <p class="msg-1"></p>
+    <p class="msg-2"></p>
+    </div>
+
+    {{>footer}}
+    
+    <script src="/script/script.js"></script>
+    
+
+</body>
+
+</html>
