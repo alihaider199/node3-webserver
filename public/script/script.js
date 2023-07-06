@@ -6,7 +6,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const searchAddress = encodeURIComponent(input.value);
-  msgOne.textContent = "Loading....";
+  msgOne.textContent = "Loading......";
   msgTwo.textContent = "";
 
   fetch("http://localhost:3000/weather?address=" + searchAddress)
