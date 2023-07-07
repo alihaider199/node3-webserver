@@ -66,5 +66,5 @@ app.get("*", (req, res) => {
   });
 });
 app.listen(3000, () => {
-  console.log("the server is start up");
+  // console.log("the server is start up");
 });
