@@ -4,6 +4,7 @@ const forcast = require("./utils/forcast.js");
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
+const cors = require('cors');
 const app = express();
 app.use(cors());
 // this the path of dir we need to provide
