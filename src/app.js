@@ -5,6 +5,7 @@ const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
 const app = express();
+app.use(cors());
 // this the path of dir we need to provide
 const pathDir = path.join(__dirname, "../public");
 const viewPath = path.join(__dirname, "../templete/views");
